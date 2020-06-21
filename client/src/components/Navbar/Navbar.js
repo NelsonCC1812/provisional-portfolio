@@ -1,22 +1,25 @@
+//React
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
+//Bootstrap
 import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
-import { Link } from 'react-router-dom'
-
+//Custom styles
 import './Navbar.css'
 
 export default function Nabvar_(props) {
 
+    //State
     const [colors, setColors] = useState({
         about: 'grey',
         projects: 'grey',
         contact: 'grey'
     })
 
-
+    //Handle links hover color change
     const linkHandler = (e) => {
 
         const copy = {
