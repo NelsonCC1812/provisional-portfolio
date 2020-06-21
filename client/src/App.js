@@ -24,7 +24,7 @@ export default function App() {
   //RETURN
   return (
     <>
-      <Navbar />
+      <Navbar props />
       <Route path='/home' render={ () => <h1>HOME</h1> } />
       <Route path='/about' render={ () => <h1>ABOUT</h1> } />
       <Route path='/contact' render={ () => <h1>CONTACT</h1> } />

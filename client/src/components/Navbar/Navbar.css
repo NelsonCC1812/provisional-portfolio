@@ -3,10 +3,13 @@
     justify-content: space-between;
 }
 
-
-
 .allLinks{
     text-align: center;
+}
+
+.myNavbar .firm a:hover{
+    text-decoration: none;
+    color: white;
 }
 
 @media (min-width: 770px){
