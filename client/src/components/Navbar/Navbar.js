@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar'
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 import './Navbar.css'
 
-export default function Nabvar_() {
+export default function Nabvar_(props) {
 
     const [colors, setColors] = useState({
         about: 'grey',
@@ -22,16 +22,15 @@ export default function Nabvar_() {
         const copy = {
             about: 'grey',
             projects: 'grey',
-            contact: 'gray'
+            contact: 'grey'
         }
 
         copy[e] = 'white'
 
         setColors(copy)
-
     }
+    const setDefaultColor = () => setColors({ about: 'grey', projects: 'grey', contact: 'grey' })
 
-    const setDefaultColor = () => setColors({ about: 'grey', projects: 'grey', contacts: 'gray' })
 
     return (
         <Navbar className='myNavbar' bg='dark' variant='dark' className='myNavbar' expand='md'>
@@ -47,9 +46,9 @@ export default function Nabvar_() {
                         </div>
 
                         <Navbar.Collapse  >
-                            <Nav.Link className='link' style={ { color: `${colors.about}` } } as={ Link } to='/about' onPointerOut={ () => setDefaultColor() } onPointerOver={ () => linkHandler('about') }>About</Nav.Link>
-                            <Nav.Link className='link' style={ { color: `${colors.projects}` } } as={ Link } to='/projects' onPointerOut={ () => setDefaultColor() } onPointerOver={ () => linkHandler('projects') }>Projects</Nav.Link>
-                            <Nav.Link className='link' style={ { color: `${colors.contact}` } } as={ Link } to='/contact' onPointerOut={ () => setDefaultColor() } onPointerOver={ () => linkHandler('contact') }>Contact</Nav.Link>
+                            <Nav.Link className='link' style={ { color: `${colors.about}` } } as={ Link } to='/about' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('about') }>About</Nav.Link>
+                            <Nav.Link className='link' style={ { color: `${colors.projects}` } } as={ Link } to='/projects' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('projects') }>Projects</Nav.Link>
+                            <Nav.Link className='link' style={ { color: `${colors.contact}` } } as={ Link } to='/contact' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('contact') }>Contact</Nav.Link>
                         </Navbar.Collapse>
 
                     </div>
