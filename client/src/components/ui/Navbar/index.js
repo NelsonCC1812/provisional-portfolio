@@ -18,6 +18,7 @@ export default function Nabvar_(props) {
         projects: 'grey',
         contact: 'grey'
     })
+    const [toggling, toggler] = useState(false)
 
     //Handle links hover color change
     const linkHandler = (e) => {
@@ -40,18 +41,23 @@ export default function Nabvar_(props) {
         let prevY = window.pageYOffset
 
         window.onscroll = () => {
-            if (prevY + 3 < window.pageYOffset) {
+            if (prevY < window.pageYOffset && !toggling) {
                 document.getElementsByClassName('myNavbar')[0].classList.add('uphidden')
-            } else if (prevY - 3 > window.pageYOffset) {
+            } else if (prevY > window.pageYOffset && !toggling) {
                 document.getElementsByClassName('myNavbar')[0].classList.remove('uphidden')
             }
             prevY = window.pageYOffset
         }
     })
 
+    const togglerHandler = () => {
+        toggler(true)
+        setTimeout(() => toggler(false), 500)
+    }
+
 
     return (
-        <Navbar className='myNavbar' sticky='top' bg='dark' variant='dark' className='myNavbar' expand='md'>
+        <Navbar className='myNavbar' sticky='top' bg='dark' variant='dark' expand='md'>
 
             <div style={ { display: 'flex', justifyContent: 'space-between', width: '100%' } }>
 
@@ -60,7 +66,7 @@ export default function Nabvar_(props) {
 
                         <div className='mainNav'>
                             <Navbar.Brand as={ Link } to='home'>My portfolio</Navbar.Brand>
-                            <Navbar.Toggle style={ { height: '20%' } } />
+                            <Navbar.Toggle name='toggle' style={ { height: '20%' } } onClickCapture={ togglerHandler } />
                         </div>
 
                         <Navbar.Collapse  >
