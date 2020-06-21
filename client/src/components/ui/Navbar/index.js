@@ -70,7 +70,7 @@ export default function Nabvar_(props) {
                         </div>
 
                         <Navbar.Collapse  >
-                            <Nav.Link className='link' style={ { color: `${colors.about}` } } as={ Link } to='/about' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('about') }>About</Nav.Link>
+                            <Nav.Link className='link' style={ { color: `${colors.about}` } } as={ Link } to='/about' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('about') }>About me</Nav.Link>
                             <Nav.Link className='link' style={ { color: `${colors.projects}` } } as={ Link } to='/projects' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('projects') }>Projects</Nav.Link>
                             <Nav.Link className='link' style={ { color: `${colors.contact}` } } as={ Link } to='/contact' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('contact') }>Contact</Nav.Link>
                         </Navbar.Collapse>
