@@ -1,0 +1,40 @@
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.allLinks{
+    text-align: center;
+}
+
+@media (min-width: 770px){
+    .allLinks{
+        display: flex;
+    }
+    .firm{
+        display: block;
+    }
+    .link{
+        display: inline;
+    }
+}
+
+@media (max-width: 770px){
+    .allLinks{
+        display: 'flex';
+        justify-content: 'space-between';
+    }
+    .firm{
+        display: none ;
+    }
+    .link{
+        display: block ;
+    }
+
+    .myNavbar .link{
+    border: 0px  solid grey ;
+    border-top-width: 1px;
+    }
+}

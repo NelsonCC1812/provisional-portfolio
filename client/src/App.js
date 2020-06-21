@@ -1,36 +1,33 @@
 //React imports
 import React, { useState, useEffect, useCallback } from 'react'
+import { Route } from 'react-router-dom'
+
+import Container from 'react-bootstrap/Container'
+
 //Style imports
 import './App.css'
 //Services
-import AuthService from './services/auth.service'
 
+//Components
+import Navbar from './components/Navbar/Navbar'
 
 export default function App() {
 
   //USESTATE
-  const [loggedInUser, setTheUser] = useState(undefined)
   const [message, changeMessage] = useState('')
-  const [authService] = useState(new AuthService())
 
   //USECALLBAK
   const clearMessage = useCallback(() => changeMessage(''), [])
-  const isLoggedIn = useCallback(() => {
-    authService.loggedInUser()
-      .then(response => setTheUser(response.user))
-      .catch(() => changeMessage('An error has occurred'))
-  }, [authService])
 
   //USEEFFECT
-  useEffect(() => isLoggedIn(), [isLoggedIn])
 
   //RETURN
   return (
-
-    <>{ console.log(loggedInUser, message) }
-      <h1>Here your app!</h1>
-      <p>{ message }</p>
+    <>
+      <Navbar />
+      <Route path='/home' render={ () => <h1>HOME</h1> } />
+      <Route path='/about' render={ () => <h1>ABOUT</h1> } />
+      <Route path='/contact' render={ () => <h1>CONTACT</h1> } />
     </>
-
   )
 }
