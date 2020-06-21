@@ -1,5 +1,5 @@
 //React
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 //Bootstrap
@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
 //Custom styles
-import './Navbar.css'
+import './navbar.css'
 
 export default function Nabvar_(props) {
 
@@ -34,9 +34,24 @@ export default function Nabvar_(props) {
     }
     const setDefaultColor = () => setColors({ about: 'grey', projects: 'grey', contact: 'grey' })
 
+    //Change navbar color on scroll
+
+    useEffect(() => {
+        let prevY = window.pageYOffset
+
+        window.onscroll = () => {
+            if (prevY + 3 < window.pageYOffset) {
+                document.getElementsByClassName('myNavbar')[0].classList.add('uphidden')
+            } else if (prevY - 3 > window.pageYOffset) {
+                document.getElementsByClassName('myNavbar')[0].classList.remove('uphidden')
+            }
+            prevY = window.pageYOffset
+        }
+    })
+
 
     return (
-        <Navbar className='myNavbar' bg='dark' variant='dark' className='myNavbar' expand='md'>
+        <Navbar className='myNavbar' sticky='top' bg='dark' variant='dark' className='myNavbar' expand='md'>
 
             <div style={ { display: 'flex', justifyContent: 'space-between', width: '100%' } }>
 
