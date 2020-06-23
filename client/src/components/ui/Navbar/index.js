@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom'
 import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import Modal from 'react-bootstrap/Modal'
+
+//Custom components
+import Contact from './Contact'
 
 //Custom styles
 import './navbar.css'
@@ -13,35 +17,16 @@ import './navbar.css'
 export default function Nabvar_(props) {
 
     //State
-    const [colors, setColors] = useState({
-        about: 'grey',
-        projects: 'grey',
-        contact: 'grey'
-    })
     const [toggling, toggler] = useState(false)
+    const [showContactModal, setContactModal] = useState(false)
 
-    //Handle links hover color change
-    const linkHandler = (e) => {
-
-        const copy = {
-            about: 'grey',
-            projects: 'grey',
-            contact: 'grey'
-        }
-
-        copy[e] = 'white'
-
-        setColors(copy)
-    }
-    const setDefaultColor = () => setColors({ about: 'grey', projects: 'grey', contact: 'grey' })
-
-    //Change navbar color on scroll
+    //Hide navbar color on scroll
 
     useEffect(() => {
         let prevY = window.pageYOffset
 
         window.onscroll = () => {
-            if (prevY < window.pageYOffset && !toggling) {
+            if (prevY < window.pageYOffset && !toggling && window.location.pathname !== '/contact') {
                 document.getElementsByClassName('myNavbar')[0].classList.add('uphidden')
             } else if (prevY > window.pageYOffset && !toggling) {
                 document.getElementsByClassName('myNavbar')[0].classList.remove('uphidden')
@@ -54,6 +39,9 @@ export default function Nabvar_(props) {
         toggler(true)
         setTimeout(() => toggler(false), 500)
     }
+
+    const openContactModal = () => setContactModal(true)
+    const closeContactModal = () => setContactModal(false)
 
 
     return (
@@ -70,9 +58,9 @@ export default function Nabvar_(props) {
                         </div>
 
                         <Navbar.Collapse  >
-                            <Nav.Link className='link' style={ { color: `${colors.about}` } } as={ Link } to='/about' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('about') }>About me</Nav.Link>
-                            <Nav.Link className='link' style={ { color: `${colors.projects}` } } as={ Link } to='/projects' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('projects') }>Projects</Nav.Link>
-                            <Nav.Link className='link' style={ { color: `${colors.contact}` } } as={ Link } to='/contact' onPointerOut={ setDefaultColor } onPointerOver={ () => linkHandler('contact') }>Contact</Nav.Link>
+                            <Nav.Link className='link' as={ Link } to='/about' >About me</Nav.Link>
+                            <Nav.Link className='link' as={ Link } to='/projects' >Projects</Nav.Link>
+                            <Nav.Link className='link' onClick={ openContactModal }>Contact</Nav.Link>
                         </Navbar.Collapse>
 
                     </div>
@@ -80,10 +68,14 @@ export default function Nabvar_(props) {
 
                 <Navbar.Collapse as={ Col } md={ 3 } className='justify-content-end'>
                     <Navbar.Text className='firm' style={ { marginLeft: '5px', marginRight: '10px' } }>
-                        Made by: { < Link to="/about" >Nelson Cabrera Cano</ Link> }
+                        Provisional portfolio
                     </Navbar.Text>
                 </Navbar.Collapse>
             </div>
+
+            <Modal show={ showContactModal } onHide={ closeContactModal } centered='true'>
+                <Contact />
+            </Modal>
 
         </Navbar>
     )
