@@ -5,9 +5,6 @@ import React from 'react'
 import { ReactComponent as LogoLinkedin } from '../../../../images/linkedin.svg'
 import { ReactComponent as LogoMail } from '../../../../images/correo.svg'
 
-//Bootstrap components
-import Container from 'react-bootstrap/Container'
-
 //Custom styles
 import './contact.css'
 

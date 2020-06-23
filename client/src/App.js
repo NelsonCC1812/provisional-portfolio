@@ -1,10 +1,9 @@
 //React imports
-import React, { useState, useEffect, useCallback } from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 //Style imports
 import './App.css'
-//Services
 
 //UI components
 import Navbar from './components/ui/Navbar'
@@ -13,14 +12,6 @@ import Footer from './components/ui/Footer'
 import Home from './components/pages/Home'
 
 export default function App() {
-
-  //USESTATE
-  const [message, changeMessage] = useState('')
-
-  //USECALLBAK
-  const clearMessage = useCallback(() => changeMessage(''), [])
-
-  //USEEFFECT
 
   //RETURN
   return (
