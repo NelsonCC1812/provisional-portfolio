@@ -1,0 +1,29 @@
+[
+    {
+        "order": 1,
+        "name": "Kill'em all (game1)",
+        "description": "A simple game about kill an elegible quantify of enemies, using some habilities.",
+        "objetive": "Create a simple game to learn an evalue classes knowledge and basic animation habilities using vanilla canvas.",
+        "duration": 1,
+        "image": "./../../../images/game1.png",
+        "link": "https://nelsoncc1812.github.io/game1/"
+    },
+    {
+        "order": 2,
+        "name": "Harcoded News",
+        "description": "A news web, using axios technology, databases, API.",
+        "objetive": "Learn about APIs and databases (MongoDB), user credentials, Express...",
+        "duration": 1,
+        "image": "./../../../images/harcoded.png",
+        "link": "https://harcodednews.herokuapp.com/"
+    },
+    {
+        "order": 3,
+        "name": "Nahele project (Fluffy's Shelter)",
+        "description": "Web about look for animal that need adoption, you can create your own profile and put up in adoption and create events to meet pets that you are interested in.",
+        "objetive": "Create a single page application full Javascript. We used a bundle of technologies: React, Express, Axios, Web Sockets, Data visualization (amCharts)...",
+        "duration": 2,
+        "image": "./../../../images/nahele.png",
+        "link": "https://nahele-proyect.herokuapp.com/"
+    }
+]

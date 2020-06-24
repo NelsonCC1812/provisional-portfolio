@@ -35,16 +35,19 @@ export default function Nabvar_(props) {
         }
     })
 
+    //Togler hadler
     const togglerHandler = () => {
         toggler(true)
         setTimeout(() => toggler(false), 500)
     }
 
+    //Modal handler
     const openContactModal = () => setContactModal(true)
     const closeContactModal = () => setContactModal(false)
 
 
     return (
+
         <Navbar className='myNavbar' sticky='top' bg='dark' variant='dark' expand='md'>
 
             <div style={ { display: 'flex', justifyContent: 'space-between', width: '100%' } }>
@@ -53,7 +56,7 @@ export default function Nabvar_(props) {
                     <div className='allLinks'>
 
                         <div className='mainNav'>
-                            <Navbar.Brand as={ Link } to='home'>My portfolio</Navbar.Brand>
+                            <Navbar.Brand as={ Link } to='home' style={ { marginLeft: '10px' } }>My portfolio</Navbar.Brand>
                             <Navbar.Toggle name='toggle' style={ { height: '20%' } } onClickCapture={ togglerHandler } />
                         </div>
 

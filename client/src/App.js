@@ -2,14 +2,17 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-//Style imports
-import './App.css'
-
 //UI components
 import Navbar from './components/ui/Navbar'
 import Footer from './components/ui/Footer'
+
 //pages components
 import Home from './components/pages/Home'
+import About from './components/pages/About'
+import Projects from './components/pages/Projects'
+
+//Style imports
+import './App.css'
 
 export default function App() {
 
@@ -17,13 +20,15 @@ export default function App() {
   return (
     <>
       <Navbar />
+
       <Switch>
 
         <Route path='/home' render={ () => <Home /> } />
-        <Route path='/about' render={ () => <h1>ABOUT</h1> } />
-        <Route path='/projects' render={ () => <h1>PROJECTS</h1> } />
+        <Route path='/about' render={ () => <About /> } />
+        <Route path='/projects' render={ () => <Projects /> } />
 
       </Switch>
+
       <Footer />
     </>
   )
