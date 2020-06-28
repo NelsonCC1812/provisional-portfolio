@@ -19,3 +19,11 @@
 ````
 rm -rf client/build; rm -rf server/public/*; cd client; npm run build-dev; cd ..; mv client/build/* server/public; rm -rf client/build
 ````
+
+
+# Pasos a seguir
+
+* El sistema de mensajeria lo llevaras por una base de datos en mongo Atlas
+* Cuando quieran contactar contigo, rellenaran un formulario
+* El formulario manda la informacion al back, este lo guarda en la base de datos que se encuentra en la nube.
+* Despues tendras un script que te sondeara en la nube si tienes "correos" nuevos.

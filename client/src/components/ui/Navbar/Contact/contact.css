@@ -3,7 +3,7 @@
     margin-left: 3vw;
 
     display: flex;
-    height: 35vh;
+    height: 60vh;
     margin-top: 7vh;
     width: 100%;
 
@@ -13,7 +13,6 @@
     list-style: none;
 }
 .contactElm{
-    width: 50vh;
     max-width: 80%;
     height: auto;
 }

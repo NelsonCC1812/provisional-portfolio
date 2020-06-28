@@ -8,3 +8,6 @@ npm-debug.log
 .env
 
 .DS_Store
+
+.env.development
+.env.production
