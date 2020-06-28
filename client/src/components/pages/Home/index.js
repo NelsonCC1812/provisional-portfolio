@@ -11,7 +11,9 @@ export default function () {
         <div className='pagesContainer'>
             <h1 style={ { marginBottom: '30px' } }>Home</h1>
 
-            <p>Thats a provisional portfolio, realized in less than a week to serve a provisional porpouse. I am actually learning about Redux. Then I will create a definitive porfolio, the code of this portfolio (maybe esthetically is not too visual) is in this link <a href='https://github.com/nelsoncc1812/provisional-portfolio'> link</a>. This portfolio is realized in React, using too some interesting technologies as: Boostrap, axios... The messages system its currently working online, so I can see messages if you want to contact with me.</p>
+            <p >Thats a provisional portfolio, realized in less than a week to serve a provisional porpouse. I am actually learning about Redux. Then I will create a definitive porfolio, the code of this portfolio (maybe esthetically is not too visual) is in this link <a href='https://github.com/nelsoncc1812/provisional-portfolio'> link</a>. This portfolio is realized in React, using too some interesting technologies as: Boostrap, axios... The messages system its currently working online, so I can see messages if you want to contact with me.
+            </p>
+
         </div>
     )
 }
