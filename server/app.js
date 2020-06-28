@@ -26,6 +26,7 @@ require('./configs/cors.config')(app)
 
 //base URLs
 app.use('/api/auth', require('./routes/auth.routes'))
+app.use('/api/mail', require('./routes/mail.routes'))
 
 app.use((req, res) => res.sendFile(__dirname + '/public/index.html'))
 

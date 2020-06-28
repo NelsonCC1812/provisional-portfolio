@@ -77,7 +77,7 @@ export default function Nabvar_(props) {
             </div>
 
             <Modal show={ showContactModal } onHide={ closeContactModal } centered='true'>
-                <Contact />
+                <Contact closeContactModal={ () => closeContactModal() } />
             </Modal>
 
         </Navbar>
