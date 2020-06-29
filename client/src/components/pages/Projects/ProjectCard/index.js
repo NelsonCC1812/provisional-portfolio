@@ -8,7 +8,7 @@ export default function ProjectCard_({ order, name, description, objetive, durat
         <div className='projectCard'>
             <h2> { name }</h2>
             <div style={ { paddingTop: '40px', borderTop: '2px solid black', borderBottom: '2px solid black' } }>
-                <img src={ image } />
+                <img src={ image } alt={ name } />
                 <h3>Order: { order } </h3>
                 <h3>Descrition: { description }</h3>
                 <h3>Objetive: { objetive }</h3>

@@ -1,0 +1,68 @@
+{
+    "UI": [
+        {
+            "name": "Adove XD",
+            "img": "./images/about/logos/adovexd.svg"
+        }
+    ],
+    "Version Control": [
+        {
+            "name": "Git",
+            "img": "./images/about/logos/git.svg"
+        },
+        {
+            "name": "Github",
+            "img": "./images/about/logos/github.svg"
+        }
+    ],
+    "Styling": [
+        {
+            "name": "CSS3",
+            "img": "./images/about/logos/css3.svg"
+        },
+        {
+            "name": "Sass",
+            "img": "./images/about/logos/sass.png"
+        },
+        {
+            "name": "Bootstrap",
+            "img": "./images/about/logos/bootstrap.svg"
+        }
+    ],
+    "Structure": [
+        {
+            "name": "HTML5",
+            "img": "./images/about/logos/html5.svg"
+        },
+        {
+            "name": "Handlebars",
+            "img": "./images/about/logos/handlebars.svg"
+        }
+    ],
+    "Frameworks": [
+        {
+            "name": "React",
+            "img": "./images/about/logos/react.svg"
+        },
+        {
+            "name": "Express",
+            "img": "./images/about/logos/express.png"
+        }
+    ],
+    "Databases": [
+        {
+            "name": "MongoDB",
+            "img": "./images/about/logos/mongodb.svg"
+        }
+    ],
+    "Others": [
+        {
+            "name": "NodeJS",
+            "img": "./images/about/logos/nodejs.svg"
+        },
+        {
+            "name": "npm",
+            "img": "./images/about/logos/npm.svg"
+        }
+    ]
+}
