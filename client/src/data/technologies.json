@@ -2,67 +2,85 @@
     "UI": [
         {
             "name": "Adove XD",
-            "img": "./images/about/logos/adovexd.svg"
+            "img": "./images/about/logos/adovexd.svg",
+            "link": "https://www.adobe.com/es/products/xd/details.html"
         }
     ],
     "Version Control": [
         {
             "name": "Git",
-            "img": "./images/about/logos/git.svg"
+            "img": "./images/about/logos/git.svg",
+            "link": "https://git-scm.com/"
         },
         {
             "name": "Github",
-            "img": "./images/about/logos/github.svg"
+            "img": "./images/about/logos/github.svg",
+            "link": "https://github.com/"
         }
     ],
     "Styling": [
         {
             "name": "CSS3",
-            "img": "./images/about/logos/css3.svg"
+            "img": "./images/about/logos/css3.svg",
+            "link": "https://developer.mozilla.org/es/docs/Web/CSS"
         },
         {
             "name": "Sass",
-            "img": "./images/about/logos/sass.png"
+            "img": "./images/about/logos/sass.png",
+            "link": "https://sass-lang.com/"
         },
         {
             "name": "Bootstrap",
-            "img": "./images/about/logos/bootstrap.svg"
+            "img": "./images/about/logos/bootstrap.svg",
+            "link": "https://getbootstrap.com/"
+        },
+        {
+            "name": "React Bootstrap",
+            "img": "./images/about/logos/reactbootstrap.png",
+            "link": "https://react-bootstrap.github.io/"
         }
     ],
     "Structure": [
         {
             "name": "HTML5",
-            "img": "./images/about/logos/html5.svg"
+            "img": "./images/about/logos/html5.svg",
+            "link": "https://developer.mozilla.org/es/docs/HTML/HTML5"
         },
         {
             "name": "Handlebars",
-            "img": "./images/about/logos/handlebars.svg"
+            "img": "./images/about/logos/handlebars.svg",
+            "link": "https://handlebarsjs.com/"
         }
     ],
     "Frameworks": [
         {
             "name": "React",
-            "img": "./images/about/logos/react.svg"
+            "img": "./images/about/logos/react.svg",
+            "link": "https://es.reactjs.org/"
         },
         {
-            "name": "Express",
-            "img": "./images/about/logos/express.png"
+            "name": "ExpressJS",
+            "img": "./images/about/logos/express.png",
+            "link": "https://expressjs.com/es/"
         }
     ],
     "Databases": [
         {
             "name": "MongoDB",
-            "img": "./images/about/logos/mongodb.svg"
+            "img": "./images/about/logos/mongodb.svg",
+            "link": "https://www.mongodb.com/es"
         }
     ],
     "Others": [
         {
             "name": "NodeJS",
-            "img": "./images/about/logos/nodejs.svg"
+            "img": "./images/about/logos/nodejs.svg",
+            "link": "https://nodejs.org/es/"
         },
         {
             "name": "npm",
-            "img": "./images/about/logos/npm.svg"
+            "img": "./images/about/logos/npm.svg",
+            "link": "https://www.npmjs.com/"
         }
     ]
 }
