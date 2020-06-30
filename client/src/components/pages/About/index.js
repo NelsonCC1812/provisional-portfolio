@@ -21,7 +21,11 @@ export default function About_() {
 
             <section style={ { marginTop: '20px' } }>
                 <h3>I studied on:</h3>
-                <figure style={ { textAlign: 'center' } }><img style={ { width: '90px' } } src='./images/about/ironhack.png' alt='ironhack' /> <figcaption>Ironhack</figcaption></figure>
+                <a target='_blank' rel='noopener noreferrer' href='https://www.ironhack.com/es/desarrollo-web'>
+
+                    <figure style={ { textAlign: 'center' } }><img style={ { width: '90px' } } src='./images/about/ironhack.png' alt='ironhack' /> <figcaption>Ironhack</figcaption> <p>Full-stack dev</p></figure>
+
+                </a>
             </section>
             <TechSection />
         </div>
