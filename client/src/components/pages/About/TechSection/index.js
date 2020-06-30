@@ -1,6 +1,9 @@
 //React
 import React from 'react'
 
+//Bootstrap
+import Container from 'react-bootstrap/Container'
+
 //Custom components
 import TechArticle from './TechArticle'
 
@@ -15,9 +18,11 @@ export default function TechSection_() {
     const articles = Object.keys(technologies)
 
     return (
-        <section>
-            <h3>Technologies</h3>
-            { articles.map(elm => <TechArticle key={ elm } title={ elm } technologies={ technologies[elm] } />) }
+        <section >
+            <h2>Technologies</h2>
+            <Container>
+                { articles.map(elm => <TechArticle key={ elm } title={ elm } technologies={ technologies[elm] } />) }
+            </Container>
         </section>
     )
 }
