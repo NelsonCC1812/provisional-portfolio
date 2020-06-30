@@ -1,6 +1,6 @@
 //React imports
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 //UI components
 import Navbar from './components/ui/Navbar'
@@ -26,6 +26,8 @@ export default function App() {
         <Route path='/home' render={ () => <Home /> } />
         <Route path='/about' render={ () => <About /> } />
         <Route path='/projects' render={ () => <Projects /> } />
+
+        <Redirect to='/home' />
 
       </Switch>
 
