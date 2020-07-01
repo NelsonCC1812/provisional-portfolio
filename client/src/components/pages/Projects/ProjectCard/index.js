@@ -7,12 +7,12 @@ export default function ProjectCard_({ order, name, description, objetive, durat
     return (
         <div className='projectCard'>
             <h2> { name }</h2>
-            <div style={ { paddingTop: '40px', borderTop: '2px solid black', borderBottom: '2px solid black' } }>
-                <img src={ image } alt={ name } />
-                <h3>Order: { order } </h3>
-                <h3>Descrition: { description }</h3>
-                <h3>Objetive: { objetive }</h3>
-                <h3>Duration: { duration } weeks</h3>
+            <div style={ { paddingTop: '40px', borderBottom: '1px solid black' } }>
+                <a rel='noopener noreferrer' target='_blank' href={ link }><img src={ image } alt={ name } /></a>
+                <p><b>Order:</b> { order } </p>
+                <p><b>Descrition:</b> { description }</p>
+                <p><b>Objetive:</b> { objetive }</p>
+                <p><b>Duration:</b> { duration } weeks</p>
                 <a style={ { color: 'rgb(130,130,250)' } } rel='noopener noreferrer' target='_blank' href={ link }>Link to web { order > 1 && '(delays first time because free CDN politics)' } </a>
             </div>
         </div>

@@ -13,7 +13,7 @@ export default function NavigationExplain_() {
             <Row className='justify-content-around'>
                 <Col md={ 4 } >
                     <Link to='/about'>
-                        <h4>About</h4>
+                        <h4>About me</h4>
                         <p>Here you can see info about me and technologies I use</p>
                     </Link>
                 </Col>

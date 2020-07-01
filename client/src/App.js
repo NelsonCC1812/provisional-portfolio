@@ -27,7 +27,7 @@ export default function App() {
         <Route path='/about' render={ () => <About /> } />
         <Route path='/projects' render={ () => <Projects /> } />
 
-        <Redirect to='/home' />
+        <Redirect to='/about' />
 
       </Switch>
 
