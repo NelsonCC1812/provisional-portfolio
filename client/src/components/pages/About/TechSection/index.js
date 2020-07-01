@@ -20,6 +20,7 @@ export default function TechSection_() {
     return (
         <section >
             <h2>Technologies</h2>
+            <hr />
             <Container>
                 { articles.map(elm => <TechArticle key={ elm } title={ elm } technologies={ technologies[elm] } />) }
             </Container>
