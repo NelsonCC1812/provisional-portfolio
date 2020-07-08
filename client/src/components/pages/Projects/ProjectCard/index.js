@@ -12,7 +12,7 @@ export default function ProjectCard_({ order, name, description, objetive, durat
                 <p><b>Order:</b> { order } </p>
                 <p><b>Descrition:</b> { description }</p>
                 <p><b>Objetive:</b> { objetive }</p>
-                <p><b>Duration:</b> { duration } weeks</p>
+                <p><b>Duration:</b> { duration } { `week${duration > 1 ? 's' : ''}` } </p>
                 <a style={ { color: 'rgb(130,130,250)' } } rel='noopener noreferrer' target='_blank' href={ link }>Link to web { order > 1 && '(delays first time because free CDN politics)' } </a>
             </div>
         </div>
