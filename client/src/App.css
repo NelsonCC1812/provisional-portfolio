@@ -14,8 +14,12 @@ a:hover{
     margin: 5vh 10vw;
 }
 
-p, a, h1, h2, h3, h4, h5, h6{
-    color: rgb(50,50,50);
+p, a{
+    color: #03697f
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #e8940f
 }
 
 img, svg{

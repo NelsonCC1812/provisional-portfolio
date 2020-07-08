@@ -1,0 +1,14 @@
+.navigationExplain {
+    min-height: 30vh;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.navigationExplain p{
+    font-size: 25px;
+}
+
+.navigationExplain h4{
+    font-size: 35px;
+}

@@ -10,17 +10,18 @@ import './navigationExplain.css'
 export default function NavigationExplain_() {
     return (
         <Container>
-            <Row className='justify-content-around'>
-                <Col md={ 4 } >
+            <Row className='justify-content-around' >
+
+                <Col className='navigationExplain' md={ 4 } >
                     <Link to='/about'>
                         <h4>About me</h4>
                         <p>Here you can see info about me and technologies I use</p>
                     </Link>
                 </Col>
 
-                <Col md={ 4 } >
+                <Col className='navigationExplain' md={ 4 } >
                     <Link to='/projects'>
-                        <h4>Projects</h4>
+                        <h4>My projects</h4>
                         <p>Here you will see some of my principal projects and some information about my current work</p>
                     </Link>
                 </Col>

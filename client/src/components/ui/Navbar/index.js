@@ -48,7 +48,7 @@ export default function Nabvar_(props) {
 
     return (
 
-        <Navbar className='myNavbar' sticky='top' bg='dark' variant='dark' expand='md'>
+        <Navbar className='myNavbar' sticky='top' expand='md'>
 
             <div style={ { display: 'flex', justifyContent: 'space-between', width: '100%' } }>
 
@@ -62,8 +62,8 @@ export default function Nabvar_(props) {
 
                         <Navbar.Collapse  >
                             <Nav.Link className='link' as={ Link } to='/about' >About me</Nav.Link>
-                            <Nav.Link className='link' as={ Link } to='/projects' >Projects</Nav.Link>
-                            <Nav.Link className='link' onClick={ openContactModal }>Contact</Nav.Link>
+                            <Nav.Link className='link' as={ Link } to='/projects' >My projects</Nav.Link>
+                            <Nav.Link className='link' onClick={ openContactModal }>Contact me</Nav.Link>
                         </Navbar.Collapse>
 
                     </div>

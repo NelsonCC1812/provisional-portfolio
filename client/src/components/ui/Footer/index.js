@@ -12,7 +12,7 @@ export default function Footer_() {
 
     return (
         <div className='myFooter'>
-            <Navbar sticky='bottom' variant="dark" bg="dark" >
+            <Navbar sticky='bottom' className='allFooter' >
                 <Navbar.Text style={ { width: '100%', textAlign: 'center' } }>
                     Made by: { <Link to='/about'>Nelson Cabrera Cano</Link> }
                 </Navbar.Text>

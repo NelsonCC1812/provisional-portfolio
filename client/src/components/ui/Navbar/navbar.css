@@ -5,18 +5,15 @@
 
 .myNavbar{
     transition: top .1s;
+    background-color: #5bb0cf;
 }
 
 .allLinks{
     text-align: center;
 }
 
-.link {
-    color: grey
-}
-
-.link {
-    color: white;
+.myNavbar .link{
+    color: white !important
 }
 
 @media (min-width: 770px){

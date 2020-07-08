@@ -1,21 +1,26 @@
 {
-    "UI": [
+    "Frameworks": [
         {
-            "name": "Adove XD",
-            "img": "./images/about/logos/adovexd.svg",
-            "link": "https://www.adobe.com/es/products/xd/details.html"
-        }
-    ],
-    "Version Control": [
-        {
-            "name": "Git",
-            "img": "./images/about/logos/git.svg",
-            "link": "https://git-scm.com/"
+            "name": "React",
+            "img": "./images/about/logos/react.svg",
+            "link": "https://es.reactjs.org/"
         },
         {
-            "name": "Github",
-            "img": "./images/about/logos/github.svg",
-            "link": "https://github.com/"
+            "name": "ExpressJS",
+            "img": "./images/about/logos/expressjs.png",
+            "link": "https://expressjs.com/es/"
+        }
+    ],
+    "Structure": [
+        {
+            "name": "HTML5",
+            "img": "./images/about/logos/html5.svg",
+            "link": "https://developer.mozilla.org/es/docs/HTML/HTML5"
+        },
+        {
+            "name": "Handlebars",
+            "img": "./images/about/logos/handlebars.svg",
+            "link": "https://handlebarsjs.com/"
         }
     ],
     "Styling": [
@@ -40,28 +45,16 @@
             "link": "https://react-bootstrap.github.io/"
         }
     ],
-    "Structure": [
+    "Version Control": [
         {
-            "name": "HTML5",
-            "img": "./images/about/logos/html5.svg",
-            "link": "https://developer.mozilla.org/es/docs/HTML/HTML5"
+            "name": "Git",
+            "img": "./images/about/logos/git.svg",
+            "link": "https://git-scm.com/"
         },
         {
-            "name": "Handlebars",
-            "img": "./images/about/logos/handlebars.svg",
-            "link": "https://handlebarsjs.com/"
-        }
-    ],
-    "Frameworks": [
-        {
-            "name": "React",
-            "img": "./images/about/logos/react.svg",
-            "link": "https://es.reactjs.org/"
-        },
-        {
-            "name": "ExpressJS",
-            "img": "./images/about/logos/expressjs.png",
-            "link": "https://expressjs.com/es/"
+            "name": "Github",
+            "img": "./images/about/logos/github.svg",
+            "link": "https://github.com/"
         }
     ],
     "Databases": [
@@ -69,6 +62,13 @@
             "name": "MongoDB",
             "img": "./images/about/logos/mongodb.svg",
             "link": "https://www.mongodb.com/es"
+        }
+    ],
+    "UI": [
+        {
+            "name": "Adove XD",
+            "img": "./images/about/logos/adovexd.svg",
+            "link": "https://www.adobe.com/es/products/xd/details.html"
         }
     ],
     "Others": [
