@@ -18,7 +18,7 @@ export default function About_() {
                 <p>He de decir que me esfuerzo mucho por proveer soluciones lo más profesionales posibles, haciendo hincapié en la limpieza y calidad del código, usando en la medida de los posible las herramientas de las que disponemos, como son: métodos, funciones, dependencias... </p>
             </div>
 
-            <h6 style={ {} }>See more about me:</h6>
+            <h6 >See more about me:</h6>
 
             <div style={ { paddingTop: '5px', paddingBottom: '30px', display: 'flex', justifyContent: 'space-evenly', } }>
 
@@ -36,8 +36,9 @@ export default function About_() {
             </div>
 
             <section style={ { marginTop: '20px' } }>
-                <h3>I studied on:</h3>
-                <hr />
+                <div className='bar'>
+                    <h3 style={ { color: 'white', paddingLeft: '5px' } }>I studied on:</h3>
+                </div>
                 <div style={ { display: 'flex', justifyContent: 'space-around' } }>
 
                     <a target='_blank' rel='noopener noreferrer' href='https://www.ironhack.com/es/desarrollo-web'>
