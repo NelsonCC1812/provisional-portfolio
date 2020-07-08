@@ -13,9 +13,9 @@ export default function About_() {
             <h1 style={ { marginBottom: '30px' } }>About me</h1>
 
             <div style={ { textAlign: 'justify' } }>
-                <p>Nacido en las Islas Canarias (Fuerteventura). Estudié en Madrid el bootcamp de Full-Stack Development en Ironhack, donde aprendi el uso de varias tecnologías para el desarrollo web full-stack, como son: React, Node, Express, HTML, CSS, JS(ES6), MongoDB... Anteriormente, estudié en la Universidad de Málaga Ingeniería Electrónica, Robótica y Mecatrónica, pendiente de finalizar y paralelamente realicé varios cursos adicionales: Java orientado a Android, vehículos eléctricos...</p>
-                <p>Resolutivo, curioso, trabajador, simpatico. Buscando tener conocimientos más profundos y variados, así como, afrontar nuevos retos. Actualmente me encuentro estudiando nuevas tecnologías y desarrollando nuevos proyectos con el fin de aplicar los conocimientos adquiridos previamente y poder desarrollar nuevas hard skills, probar nuevos diseños, formas de diseñar, metodologías...</p>
-                <p>He de decir que me esfuerzo mucho por proveer soluciones lo más profesionales posibles, haciendo hincapié en la limpieza y calidad del código, usando en la medida de los posible las herramientas de las que disponemos, como son: métodos, funciones, dependencias... </p>
+                <p>Born in Canary Islands (Fuerteventura). I studied in Madrid the Full-Stack Development bootcamp in Ironhack, where I learned to use some different technologies for the web development, as: React, Node, Express, HTML, CSS, JS(ES6), MongoDB... Previously, I studied in Malaga University Electronics, Robotics and Mecatronics Engineering, pending of finalization and parallel I made son other courses: Java oriented to Android, electric vehicles...</p>
+                <p>Resolutive, curious, hard-working, friendly. Looking for have deeper and varied knowledge and new challenges. Actually I am studying new technologies and developing new projects with the purpose of apply the new knowledges acquired previously and expand new hard skills, try new designs, methodologies...</p>
+                <p>I have to say I strive a lot to provide solutions as professionals as I can, emphasizing clean and quality of code, using as far as posible the tools we have, as: methods, functions, dependencies...</p>
             </div>
 
             <h6 >See more about me:</h6>
