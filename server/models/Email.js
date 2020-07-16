@@ -14,6 +14,8 @@ const mailSchema = new Schema({
         required: true,
         type: String
     }
+}, {
+    timestamps: true
 })
 
 module.exports = mongoose.model('Mail', mailSchema)
