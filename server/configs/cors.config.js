@@ -1,6 +1,6 @@
 const cors = require('cors')
 
-const whitelist = ['http://localhost:3000']
+const whitelist = ['https://provisional-portfolio.herokuapp.com', 'http://provisional-portfolio.herokuapp.com']
 const corsOptions = {
     origin: (origin, cb) => {
         const originWhitelisted = whitelist.includes(origin)
