@@ -6,10 +6,6 @@ import { Link } from 'react-router-dom'
 import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import Modal from 'react-bootstrap/Modal'
-
-//Custom components
-import Contact from './Contact'
 
 //Custom styles
 import './navbar.css'
@@ -18,7 +14,6 @@ export default function Nabvar_(props) {
 
     //State
     const [toggling, toggler] = useState(false)
-    const [showContactModal, setContactModal] = useState(false)
 
     //Hide navbar color on scroll
 
@@ -41,10 +36,6 @@ export default function Nabvar_(props) {
         setTimeout(() => toggler(false), 500)
     }
 
-    //Modal handler
-    const openContactModal = () => setContactModal(true)
-    const closeContactModal = () => setContactModal(false)
-
 
     return (
 
@@ -63,7 +54,7 @@ export default function Nabvar_(props) {
                         <Navbar.Collapse  >
                             <Nav.Link className='link' as={ Link } to='/about' >About me</Nav.Link>
                             <Nav.Link className='link' as={ Link } to='/projects' >My projects</Nav.Link>
-                            <Nav.Link className='link' onClick={ openContactModal }>Contact me</Nav.Link>
+                            <Nav.Link className='link' onClick={ props.openContactModal }>Contact me</Nav.Link>
                         </Navbar.Collapse>
 
                     </div>
@@ -75,10 +66,6 @@ export default function Nabvar_(props) {
                     </Navbar.Text>
                 </Navbar.Collapse>
             </div>
-
-            <Modal show={ showContactModal } onHide={ closeContactModal } centered='true'>
-                <Contact closeContactModal={ () => closeContactModal() } />
-            </Modal>
 
         </Navbar>
     )

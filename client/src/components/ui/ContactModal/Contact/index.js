@@ -8,6 +8,7 @@ import MailForm from './MailForm'
 import './contact.css'
 
 export default function Contact_(props) {
+
     return (
         <div style={ { width: '80%', marginLeft: '2vw' } }>
             <h1 style={ { marginTop: '5vh', fontSize: '3.5em' } }>Contact</h1>

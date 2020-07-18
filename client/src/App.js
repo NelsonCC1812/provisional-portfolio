@@ -1,5 +1,5 @@
 //React imports
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 //UI components
@@ -11,15 +11,24 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Projects from './components/pages/Projects'
 
+import ContactModal from './components/ui/ContactModal'
+
 //Style imports
 import './App.css'
 
 export default function App() {
 
+  // State
+  const [showContactModal, setContactModal] = useState(false)
+
+  // Modal handlers
+  const openContactModal = () => setContactModal(true)
+  const closeContactModal = () => setContactModal(false)
+
   //RETURN
   return (
     <>
-      <Navbar />
+      <Navbar openContactModal={ openContactModal } />
 
       <Switch>
 
@@ -32,6 +41,10 @@ export default function App() {
       </Switch>
 
       <Footer />
+
+      {/* Modals */ }
+
+      <ContactModal showContactModal={ showContactModal } closeContactModal={ closeContactModal } />
     </>
   )
 }
