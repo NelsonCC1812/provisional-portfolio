@@ -13,7 +13,13 @@
 }
 
 .myNavbar .link{
-    color: white !important
+    color: white !important;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.myNavbar .link:hover{
+    text-decoration: underline;
 }
 
 @media (min-width: 770px){
