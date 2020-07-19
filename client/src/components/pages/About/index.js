@@ -1,5 +1,5 @@
 //React imports
-import React from 'react'
+import React, { useEffect } from 'react'
 
 //Custom elements
 import TechSection from './TechSection'
@@ -7,7 +7,12 @@ import TechSection from './TechSection'
 //Custom styles
 import './about.css'
 
-export default function About_() {
+export default function About_(props) {
+
+    useEffect(() => {
+        props.setUrl()
+    }, [])
+
     return (
         <div className='pagesContainer'>
             <h1 style={ { marginBottom: '30px' } }>About me</h1>

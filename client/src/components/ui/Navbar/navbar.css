@@ -32,6 +32,10 @@
     .link{
         display: inline;
     }
+
+    .toggler{
+        display: none;
+    }
 }
 
 @media (max-width: 770px){
@@ -50,4 +54,5 @@
     border: 0px  solid grey ;
     border-top-width: 1px;
     }
+
 }

@@ -20,6 +20,7 @@ export default function App() {
 
   // State
   const [showContactModal, setContactModal] = useState(false)
+  const [url, setUrl] = useState('/home')
 
   // Modal handlers
   const openContactModal = () => setContactModal(true)
@@ -28,13 +29,13 @@ export default function App() {
   //RETURN
   return (
     <>
-      <Navbar openContactModal={ openContactModal } />
+      <Navbar openContactModal={ openContactModal } url={ url } />
 
       <Switch>
 
-        <Route path='/home' render={ () => <Home /> } />
-        <Route path='/about' render={ () => <About /> } />
-        <Route path='/projects' render={ () => <Projects /> } />
+        <Route path='/home' render={ () => <Home setUrl={ () => setUrl('/home') } /> } />
+        <Route path='/about' render={ () => <About setUrl={ () => setUrl('/about') } /> } />
+        <Route path='/projects' render={ () => <Projects setUrl={ () => setUrl('/projects') } /> } />
 
         <Redirect to='/home' />
 

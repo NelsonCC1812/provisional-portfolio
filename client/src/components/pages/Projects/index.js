@@ -1,5 +1,5 @@
 //React imports
-import React from 'react'
+import React, { useEffect } from 'react'
 
 //Data import
 import projectsDB from '../../../data/projects.json'
@@ -11,7 +11,12 @@ import ProjectCard from './ProjectCard'
 import './projects.css'
 
 
-export default function Projects_() {
+export default function Projects_(props) {
+
+    useEffect(() => {
+        props.setUrl()
+    }, [])
+
     return (
         <>
             <div style={ { paddingTop: '50px', paddingBottom: '30px', margin: '0 10vw' } }>

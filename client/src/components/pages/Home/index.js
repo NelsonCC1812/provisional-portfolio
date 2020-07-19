@@ -1,12 +1,17 @@
 //React imports
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import NavigationExplain from './NavigationExplain'
 
 //Custom style
 import './home.css'
 
-export default function Home_() {
+export default function Home_(props) {
+
+    useEffect(() => {
+        props.setUrl()
+    }, [])
+
     return (
         <div className='pagesContainer'>
             <h1 >My Portfolio</h1>

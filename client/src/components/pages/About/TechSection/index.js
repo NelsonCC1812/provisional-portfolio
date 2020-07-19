@@ -13,7 +13,7 @@ import technologies from '../../../../data/technologies.json'
 //Custom styles
 import './techSection.css'
 
-export default function TechSection_() {
+export default function TechSection_(props) {
 
     const articles = Object.keys(technologies)
 

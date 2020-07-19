@@ -30,8 +30,17 @@ export default function Nabvar_(props) {
         }
     })
 
+    useEffect(() => {
+        document.getElementsByClassName('navbar-collapse')[0].classList.remove('show')
+    }, [props.url])
+
     //Togler hadler
     const togglerHandler = () => {
+
+        const expanded = document.getElementsByClassName('navbar-collapse')[0].classList
+
+        expanded.contains('show') ? expanded.remove('show') : expanded.add('show')
+
         toggler(true)
         setTimeout(() => toggler(false), 500)
     }
@@ -48,7 +57,7 @@ export default function Nabvar_(props) {
 
                         <div className='mainNav'>
                             <Navbar.Brand as={ Link } to='home' style={ { marginLeft: '10px' } }>My portfolio</Navbar.Brand>
-                            <Navbar.Toggle name='toggle' style={ { height: '20%' } } onClickCapture={ togglerHandler } />
+                            <img src='./images/menu.svg' className='toggler' name='toggle' style={ { height: '20%', width: '35px' } } onClickCapture={ togglerHandler } />
                         </div>
 
                         <Navbar.Collapse  >
